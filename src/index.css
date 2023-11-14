@@ -1,3 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #020201;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF813B;
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out;
+    border-radius: 5px;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.btn-motion {
+    @apply duration-200 ease-in-out
+}
+
+.btn-accent {
+    @apply py-3 px-8 bg-accent hover:bg-accent-h btn-motion text-dark font-semibold rounded-xl 
+}
+
+.btn-secondary {
+    @apply py-3 px-8 bg-dark border border-accent hover:text-accent btn-motion text-light rounded-xl
+}
+
+.input {
+  @apply bg-dark border-2 border-accent rounded-xl py-2 px-4 outline-none placeholder:text-gray-500
+}

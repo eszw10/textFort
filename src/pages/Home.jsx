@@ -5,7 +5,7 @@ import Decode from "./Decode";
 
 const Home = () => {
     return (
-        <div className="font-poppins ">
+        <div className="font-poppins">
             <Navbar/>
             <main className="container px-36">
                 <Hero/>

@@ -1,4 +1,4 @@
-import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -8,9 +8,9 @@ const Navbar = () => {
                 <p className='font-bold text-accent'>TEXTFORT</p>
             </div>
             <div className="navigation flex font-bold gap-12">
-                <HashLink className='hover-underline-animation text-shine' to={'/'}>Home</HashLink>
-                <HashLink className='hover-underline-animation text-shine' to={'#encode'}>Encode</HashLink>
-                <HashLink className='hover-underline-animation text-shine'to={'#decode'}>Decode</HashLink>
+                <Link className='hover-underline-animation text-shine' to={'/'}>Home</Link>
+                <Link className='hover-underline-animation text-shine' to={'/columnarEnc'}>Encrypt</Link>
+                <Link className='hover-underline-animation text-shine'to={'/columnarDec'}>Decrypt</Link>
             </div>
         </div>
     );

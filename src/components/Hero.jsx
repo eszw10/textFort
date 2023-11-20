@@ -6,7 +6,7 @@ const Hero = () => {
             <div className="text-4xl flex flex-col gap-4">
                 <p className=" text-accent font-bold">We provide</p>
                 <p className="text-accent font-bold text-6xl w-3/4">Text-Encryption Services.</p>
-                <p className="text-shine text-xl w-3/4">TextFort is a project created by team 11 that implement encryption using <span className="text-accent">AES algorithm</span></p>
+                <p className="text-shine text-xl w-3/4">TextFort is a project created by team 11 that implement encryption using <span className="text-accent">AES algorithm</span> and <span className="text-accent">Columnar Transposition Algorithm</span>.</p>
                 <div className="action flex gap-5 text-base mt-10">
                     <Link to={'#encode'} className="btn-accent ">
                         <p className="text-primary shadow-primary font-bold">Encode</p>
